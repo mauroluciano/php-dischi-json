@@ -4,7 +4,12 @@ $diskList = json_decode($string, true);
 $result = [];
 
 if (isset($_GET['index'])) {
-    $diskIndex = 
+    $diskIndex = $_GET['index'];
+    $disk = $diskList[$diskIndex];
+    $result = $disk;
+}
+else {
+    $result = $diskList;
 }
 
 
