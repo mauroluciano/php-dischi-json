@@ -21,13 +21,13 @@
 </div>    
     </header>
     <div class="container d-flex  flex-wrap" id="app">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-sm-3  g-4">
   <div class="col"  v-for="(disk, index) in disks" :key="index" >
 <div class="card m-4 ">
 <section class="text-center  pt-2">
 <img :src="disk.poster"/>
-    <h3>{{ disk.title }}</h3>
-    <p>{{ disk.author }}</p>
+    <h4>{{ disk.title }}</h4>
+    <h5>{{ disk.author }}</h5>
     <p>{{ disk.year }}</p>
 </section>    
     </div>
