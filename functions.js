@@ -21,11 +21,13 @@ createApp({
 
   methods: {
     getDisks() {
-      axios.get(this.apiUrl).then((response) => {
-        console.log(response.data);
+      axios
+        .get("http://localhost/php-dischi-json/disk-list.php")
+        .then((response) => {
+          console.log(response.data);
 
-        this.disks = response.data;
-      });
+          this.disks = response.data;
+        });
     },
     getDiskDetails(index) {
       const postData = {

@@ -1,0 +1,12 @@
+body {
+  background-color: #1d2d3c;
+}
+
+header {
+  background-color: #0f161e;
+  height: 60px;
+}
+
+header img {
+  width: 40px;
+}

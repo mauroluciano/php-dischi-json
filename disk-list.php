@@ -1,5 +1,5 @@
 <?php
-$string = file_get_contents("..data/dischi.json");
+$string = file_get_contents("./data/dischi_json.json");
 $diskList = json_decode($string, true);
 $result = [];
 
@@ -12,7 +12,8 @@ else {
     $result = $diskList;
 }
 
-
+header('Content-Type: application/json');
+echo json_encode($result);
 
 
 
