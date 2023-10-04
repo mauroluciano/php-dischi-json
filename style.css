@@ -10,3 +10,19 @@ header {
 header img {
   width: 40px;
 }
+
+.card {
+  border: none;
+  border-radius: 20px;
+  width: 350px;
+}
+
+.card img {
+  width: 160px;
+}
+
+section {
+  background-color: #112030;
+  color: white;
+  min-height: 320px;
+}
